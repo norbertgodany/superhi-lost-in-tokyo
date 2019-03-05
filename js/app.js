@@ -45,7 +45,10 @@ const Overlay = ({ showInfo, title, description, link }) => (
     }}
   >
     <div>
-      <a href={link} target="_blank"><h1 className="f4 f3-ns mt0 mb2 regular black normal lh-title">{title}</h1></a>
+      {link === ''
+        ? <h1 className="f4 f3-ns mt0 mb2 regular black normal lh-title">{title}</h1>
+        : <a href={link} target="_blank"><h1 className="f4 f3-ns mt0 mb2 regular black normal lh-title">{title}</h1></a>
+      }
       <p className="lh-title lh-copy-ns mv0 black f6 measure-l">{description}</p>
     </div>
   </div>
@@ -83,11 +86,11 @@ class Attraction extends React.Component {
     const { title, description, className, image } = this.props
     const { showInfo } = this.state
     return (
-      <div className={`ph4 ph5-ns ph0-l mb4 mb5-ns w-100 overflow-hidden pointer attraction ${className}`}
+      <div className={`ph4 ph5-ns ph0-l mb4 mb5-ns w-100 overflow-hidden attraction ${className}`}
         onMouseEnter={this.toggleInfo}
         onMouseLeave={this.closeInfo}
       >
-        <div className="relative">          
+        <div className="relative">
           <Overlay {...this.props} {...this.state} />
           <img src={`../images/${image}`} className="db" />
         </div>

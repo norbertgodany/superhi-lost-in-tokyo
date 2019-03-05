@@ -22,6 +22,11 @@ body {
   margin: -1px 0 0;
 }
 
+.overlay a {
+  color: #000;
+  text-decoration: underline;
+}
+
 .highlight {
   padding-bottom: 0.25em;
   white-space: nowrap;

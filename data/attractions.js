@@ -19,6 +19,7 @@ const attractions = [
     title: 'JBS Jazz Bar',
     description:
       'Home to over 10,000 records, JBS Jazz Bar is burrowed away in Shibuya. If simplicity, vinyl and fine whisky are what you’re in search of, this place is for you.',
+    link: '',
     image: 'image_3.jpg',
     className: 'w-third-l ml-auto-ns'
   },
@@ -26,6 +27,7 @@ const attractions = [
     title: 'Nyan da Neko',
     description:
       'If you love coffee, but you love cats more, Nyan da Neko is worthy of a visit. Located in Odaiba, you can enjoy your beverage with the company of up to 40 cats. Meow.',
+    link: '',
     image: 'image_4.jpg',
     className: 'w-40-l ml5-l mr5-l'
   },
